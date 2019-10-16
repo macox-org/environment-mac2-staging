@@ -15,9 +15,9 @@ expose:
   config:
     domain: aps-mac2.jxaas.io
     exposer: Ingress
-    http: "false"
+    http: "true"
     tlsSecretName: tls-aps-mac2-jxaas-io-s
-    tlsacme: "true"
+    tlsacme: "false"
     urltemplate: '{{.Service}}-{{.Namespace}}.{{.Domain}}'
 jenkins:
   Servers:
